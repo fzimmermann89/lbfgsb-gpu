@@ -390,7 +390,7 @@ void lbfgsbminimize(const int& n, const LBFGSB_CUDA_STATE<real>& state,
   }
 
   summary.num_iteration = iter;
-  summary.info = 0;
+  //summary.info = 0;
 
 #ifdef USE_STREAM
   for (int i = 0; i < MAX_STREAM; i++) cudaStreamDestroy(streamPool[i]);
